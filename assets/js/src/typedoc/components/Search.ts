@@ -153,7 +153,7 @@ module typedoc.search
      */
     function setLoadingState(value:SearchLoadingState) {
         if (loadingState == value) return;
-
+        alert('yesss');
         $el.removeClass(SearchLoadingState[loadingState].toLowerCase());
         loadingState = value;
         $el.addClass(SearchLoadingState[loadingState].toLowerCase());
