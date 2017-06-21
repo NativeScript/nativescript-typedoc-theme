@@ -223,6 +223,9 @@ module typedoc.search
         }
     }
 
+    /**
+     * Bind all required events on the input field.
+     */
     function bindEvents() {
         $field.on('focusin', () => {
             setHasFocus(true);        
@@ -251,12 +254,6 @@ module typedoc.search
             if (preventPress) e.preventDefault();
         })
     }
-
-    /**
-     * Bind all required events on the input field.
-     */
-    $field
-
 
     /**
      * Start searching by pressing a key on the body.
