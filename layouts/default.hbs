@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="{{relativeURL "assets/css/main.css"}}">
     <link rel="shortcut icon" href="//www.nativescript.org/favicon.ico" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@docsearch/css@1.0.0-alpha.28"
+    />
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{{relativeURL "assets/js/modernizr.js"}}"></script>
     <script src="https://cdn.cookielaw.org/consent/dc6bd370-357e-468e-916d-2c0b0f5fba8d.js" type="text/javascript" charset="UTF-8"></script> 
@@ -58,7 +62,14 @@
 <div class="overlay"></div>
 <script src="{{relativeURL "assets/js/main.js"}}"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="{{relativeURL "assets/js/search.js"}}"><' + '/script>');</script>
-
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@1.0.0-alpha.28"></script>
+<script>
+    docsearch({
+        apiKey: '8d41b4ae92a02aea355e1dc8cfad1899',
+        indexName: 'nativescript',
+        container: '#docsearch', // CSS selector to target the <input />
+    });
+</script>
 {{> analytics}}
 
 </body>
