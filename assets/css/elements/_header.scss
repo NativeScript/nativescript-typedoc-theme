@@ -1,7 +1,7 @@
 #page-header {
     position: relative;
     z-index: 1000;
-    background-color: #0c121c;
+    background-color: #65ADF1;
 
     .row {
         display: flex;
@@ -251,4 +251,19 @@
     .active {
         display: block !important;
     }
+}
+
+
+.nav-bar {
+    background-color: #65ADF1;
+}
+
+
+.algolia-search-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
 }

@@ -4,7 +4,11 @@
   "description": "A TypeDoc theme for the API-Reference of the NativeScript Cross-Platform Modules",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:tailwind && npm run build:sass && npm run build:postcss && rm assets/css/sass-build.css",
+    "build:tailwind": "npx tailwindcss-cli@latest build -o tailwind.css",
+    "build:sass": "sass assets/css/main.sass assets/css/sass-build.css",
+    "build:postcss": "postcss assets/css/sass-build.css -o assets/css/main.css --no-map"
   },
   "repository": {
     "type": "git",
@@ -24,11 +28,12 @@
   },
   "homepage": "https://github.com/NativeScript/tns-core-modules-API-Ref#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "sass": "1.32.12",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-string-replace": "^1.3.1",
@@ -37,6 +42,10 @@
     "gulp-debug": "^2.1.2",
     "gulp-sass": "^2.3.1",
     "rimraf": "^2.6.1",
+    "tailwindcss": "^2.0.3",
+    "postcss": "^8.2.13",
+    "postcss-cli": "8.3.1",
+    "postcss-import": "^14.0.1",
     "typescript": "^2.3.4"
   }
 }
