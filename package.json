@@ -1,7 +1,7 @@
 {
   "name": "nativescript-typedoc-theme",
-  "version": "0.0.7",
-  "description": "A TypeDoc theme for the API-Reference of the NativeScript Cross-Platform Modules",
+  "version": "1.0.0",
+  "description": "A TypeDoc theme for the API-Reference of NativeScript packages.",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,7 +29,6 @@
   "homepage": "https://github.com/NativeScript/tns-core-modules-API-Ref#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "sass": "1.32.12",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-cli": "^1.2.0",
@@ -41,11 +40,12 @@
     "gulp": "^3.9.1",
     "gulp-debug": "^2.1.2",
     "gulp-sass": "^2.3.1",
-    "rimraf": "^2.6.1",
-    "tailwindcss": "^2.0.3",
     "postcss": "^8.2.13",
     "postcss-cli": "8.3.1",
     "postcss-import": "^14.0.1",
+    "rimraf": "^2.6.1",
+    "sass": "1.32.12",
+    "tailwindcss": "^2.0.3",
     "typescript": "^2.3.4"
   }
 }
