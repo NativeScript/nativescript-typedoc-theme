@@ -1,6 +1,6 @@
 {
   "name": "nativescript-typedoc-theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A TypeDoc theme for the API-Reference of NativeScript packages.",
   "main": "",
   "scripts": {
